@@ -43,5 +43,10 @@
     "version": "latest",
     "title": "latest",
     "aliases": []
+  },
+  {
+    "version": "beta-2022.11",
+    "title": "beta-2022.11",
+    "aliases": []
   }
 ]
