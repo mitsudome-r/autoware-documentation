@@ -1,5 +1,10 @@
 [
   {
+    "version": "test-deploy-docs",
+    "title": "test-deploy-docs",
+    "aliases": []
+  },
+  {
     "version": "refs-tags-2022.11",
     "title": "refs-tags-2022.11",
     "aliases": []
