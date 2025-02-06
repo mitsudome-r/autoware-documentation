@@ -15,17 +15,24 @@ Open AD Kit offers two types of Docker image to let you get started with Autowar
 - NVIDIA Container Toolkit (preferred)
 - NVIDIA CUDA 12 compatible GPU Driver (preferred)
 
-The [setup script](https://github.com/autowarefoundation/autoware/blob/main/setup-dev-env.sh) will install all required dependencies with the setup script:
+1. Clone `autowarefoundation/autoware` and move to the directory.
 
-```bash
-./setup-dev-env.sh -y docker
-```
+   ```bash
+   git clone https://github.com/autowarefoundation/autoware.git
+   cd autoware
+   ```
 
-To install without **NVIDIA GPU** support:
+2. The [setup script](https://github.com/autowarefoundation/autoware/blob/main/setup-dev-env.sh) will install all required dependencies with:
 
-```bash
-./setup-dev-env.sh -y --no-nvidia docker
-```
+   ```bash
+   ./setup-dev-env.sh -y docker
+   ```
+
+   To install without **NVIDIA GPU** support:
+
+   ```bash
+   ./setup-dev-env.sh -y --no-nvidia docker
+   ```
 
 !!! info
 
@@ -33,7 +40,7 @@ To install without **NVIDIA GPU** support:
 
 ## Usage
 
-### Runtime setup
+### Runtime
 
 You can use `run.sh` to run the Autoware runtime container with the map data:
 
@@ -41,10 +48,13 @@ You can use `run.sh` to run the Autoware runtime container with the map data:
 ./docker/run.sh --map-path path_to_map_data
 ```
 
-For more launch options, you can append a custom launch command instead of using the default launch command `ros2 launch autoware_launch autoware.launch.xml`:
+For more launch options, you can append a custom launch command instead of using the default launch command which is `ros2 launch autoware_launch autoware.launch.xml`.
+
+Here is an example of running the runtime container with a custom launch command:
 
 ```bash
-./docker/run.sh --map-path path_to_map_data ros2 launch autoware_launch autoware.launch.xml map_path:=/autoware_map vehicle_model:=sample_vehicle sensor_model:=sample_sensor_kit
+./docker/run.sh --map-path ~/autoware_map/sample-map-rosbag ros2 launch autoware_launch planning_simulator.launch.xml map_path:=/autoware_map vehicle_model:=sample_vehicle sensor_model:=sample_sensor_kit
+
 ```
 
 !!! info
@@ -59,7 +69,7 @@ Inside the container, you can run the Autoware tutorials by following these link
 
 [Rosbag Replay Simulation](../../tutorials/ad-hoc-simulation/rosbag-replay-simulation.md).
 
-### Development setup
+### Development environment
 
 ```bash
 ./docker/run.sh --devel
@@ -67,7 +77,7 @@ Inside the container, you can run the Autoware tutorials by following these link
 
 !!! info
 
-    By default workspace mounted on the container will be current directory, you can change the workspace path by `--workspace path_to_workspace`. For development environments without NVIDIA GPU support use `--no-nvidia`.
+    By default workspace mounted on the container will be current directory(pwd), you can change the workspace path by `--workspace path_to_workspace`. For development environments without NVIDIA GPU support use `--no-nvidia`.
 
 #### How to set up a workspace
 
@@ -78,13 +88,22 @@ Inside the container, you can run the Autoware tutorials by following these link
    vcs import src < autoware.repos
    ```
 
-2. Update dependent ROS packages.
-
-   The dependency of Autoware may change after the Docker image was created.
-   In that case, you need to run the following commands to update the dependency.
+   If you are an active developer, you may also want to pull the nightly repositories, which contain the latest updates:
 
    ```bash
-   sudo apt update
+   vcs import src < autoware-nightly.repos
+   ```
+
+   > ⚠️ Note: The nightly repositories are unstable and may contain bugs. Use them with caution.
+
+2. Update dependent ROS packages.
+
+   The dependencies of Autoware may have changed after the Docker image was created.
+   In that case, you need to run the following commands to update the dependencies.
+
+   ```bash
+   # Make sure all ros-$ROS_DISTRO-* packages are upgraded to their latest version
+   sudo apt update && sudo apt upgrade
    rosdep update
    rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
    ```
@@ -103,7 +122,26 @@ Inside the container, you can run the Autoware tutorials by following these link
 > cd autoware
 > git pull
 > vcs import src < autoware.repos
+>
+> # If you are using nightly repositories, also run the following command:
+> vcs import src < autoware-nightly.repos
+>
 > vcs pull src
+> # Make sure all ros-$ROS_DISTRO-* packages are upgraded to their latest version
+> sudo apt update && sudo apt upgrade
+> rosdep update
+> rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
+> ```
+>
+> It might be the case that dependencies imported via `vcs import` have been moved/removed.
+> VCStool does not currently handle those cases, so if builds fail after `vcs import`, cleaning
+> and re-importing all dependencies may be necessary:
+>
+> ```bash
+> rm -rf src/*
+> vcs import src < autoware.repos
+> # If you are using nightly repositories, import them as well.
+> vcs import src < autoware-nightly.repos
 > ```
 
 #### Using VS Code remote containers for development
