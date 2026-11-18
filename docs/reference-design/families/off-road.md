@@ -8,6 +8,8 @@ The off-road family covers vehicles that drive on unpaved terrain without road i
 | Guideline   | [Off-road reference design guideline](https://autowarefoundation.github.io/autoware.orv-reference-design-docs/main/) |
 | Status      | Proposed                                                                                                             |
 
+[:octicons-link-external-24: Read the detailed guideline](https://autowarefoundation.github.io/autoware.orv-reference-design-docs/main/){ .md-button .md-button--primary }
+
 ## Off-road racer
 
 The first reference design is a small off-road racer.

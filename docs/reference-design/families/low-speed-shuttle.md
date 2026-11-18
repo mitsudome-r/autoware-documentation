@@ -8,6 +8,8 @@ The low-speed shuttle family covers campus and local passenger transport at low 
 | Guideline   | [LSA reference design guideline](https://autowarefoundation.github.io/LSA-reference-design-docs/main/) |
 | Status      | Proposed                                                                                               |
 
+[:octicons-link-external-24: Read the detailed guideline](https://autowarefoundation.github.io/LSA-reference-design-docs/main/){ .md-button .md-button--primary }
+
 ## Campus shuttle
 
 The campus shuttle is the first reference design of this family.

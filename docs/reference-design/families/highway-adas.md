@@ -1,6 +1,6 @@
-# Highway assistance
+# Highway ADAS
 
-The highway assistance family covers driver assistance on highway routes, in privately owned passenger vehicles.
+The highway ADAS family covers advanced driver assistance on highway routes, in privately owned passenger vehicles.
 
 | Field       | Value                                                                                                           |
 | ----------- | --------------------------------------------------------------------------------------------------------------- |
@@ -8,7 +8,9 @@ The highway assistance family covers driver assistance on highway routes, in pri
 | Guideline   | [PoV reference design guideline](https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/) |
 | Status      | Proposed                                                                                                        |
 
-## Vision Pilot highway assistance
+[:octicons-link-external-24: Read the detailed guideline](https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/){ .md-button .md-button--primary }
+
+## Vision Pilot highway ADAS
 
 The baseline reference design uses one front camera and the [Vision Pilot](../software-stacks.md#vision-pilot) stack.
 
@@ -44,7 +46,7 @@ The guideline gives the target GPU performance of each variant, from 50 TOPS to 
 
 ## Open items
 
-- Rename the PoV guideline to the highway assistance reference design, and use the six blueprint sections. See the [reference design template](../template.md).
+- Rename the PoV guideline to the highway ADAS reference design, and use the six blueprint sections. See the [reference design template](../template.md).
 - Update the software section of the guideline from AutoSeg to AutoSteer, AutoSpeed, and AutoDrive.
 - Specify the reference vehicle and complete the platform section.
 - Record the evaluation results for one tested configuration.

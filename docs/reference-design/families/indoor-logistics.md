@@ -8,6 +8,8 @@ The indoor logistics family covers vehicles that move goods in GPS-denied, struc
 | Guideline   | [LSA reference design guideline, indoor ODD](https://autowarefoundation.github.io/LSA-reference-design-docs/main/odd-definition/indoor/) |
 | Status      | Proposed                                                                                                                                 |
 
+[:octicons-link-external-24: Read the detailed guideline](https://autowarefoundation.github.io/LSA-reference-design-docs/main/odd-definition/indoor/){ .md-button .md-button--primary }
+
 ## Warehouse vehicle
 
 The first reference design is a vehicle for warehouse aisles.

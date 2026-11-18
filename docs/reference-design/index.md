@@ -19,21 +19,14 @@ The catalog is organized by application. A family groups the reference designs o
 
 <div class="grid cards" markdown>
 
-- **Low-speed shuttle**
-
-  ***
-
-  Campus and local passenger transport. The campus shuttle has variants with rule-based planning, a diffusion planner, and METEOR.
-
-  [:octicons-arrow-right-24: Low-speed shuttle](families/low-speed-shuttle.md)
-
-- **Highway assistance**
+- **Highway ADAS**
 
   ***
 
   Driver assistance on highway routes in passenger vehicles, with the camera-based Vision Pilot stack.
 
-  [:octicons-arrow-right-24: Highway assistance](families/highway-assistance.md)
+  [:octicons-arrow-right-24: Family overview](families/highway-adas.md)<br>
+  [:octicons-link-external-24: Detailed guideline](https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/)
 
 - **Urban robotaxi**
 
@@ -41,7 +34,24 @@ The catalog is organized by application. A family groups the reference designs o
 
   Passenger transport in urban areas within a defined ODD, with the Fusion Pilot stack.
 
-  [:octicons-arrow-right-24: Urban robotaxi](families/urban-robotaxi.md)
+  [:octicons-arrow-right-24: Family overview](families/urban-robotaxi.md)
+
+- **Low-speed shuttle**
+
+  ***
+
+  Campus and local passenger transport. The campus shuttle has variants with rule-based planning, a diffusion planner, and METEOR.
+
+  [:octicons-arrow-right-24: Family overview](families/low-speed-shuttle.md)<br>
+  [:octicons-link-external-24: Detailed guideline](https://autowarefoundation.github.io/LSA-reference-design-docs/main/)
+
+- **Truck**
+
+  ***
+
+  Freight transport with heavy-duty trucks. This family is planned.
+
+  [:octicons-arrow-right-24: Family overview](families/truck.md)
 
 - **Indoor logistics**
 
@@ -49,7 +59,8 @@ The catalog is organized by application. A family groups the reference designs o
 
   Goods transport in warehouses and other GPS-denied indoor areas.
 
-  [:octicons-arrow-right-24: Indoor logistics](families/indoor-logistics.md)
+  [:octicons-arrow-right-24: Family overview](families/indoor-logistics.md)<br>
+  [:octicons-link-external-24: Detailed guideline](https://autowarefoundation.github.io/LSA-reference-design-docs/main/odd-definition/indoor/)
 
 - **Off-road**
 
@@ -57,25 +68,27 @@ The catalog is organized by application. A family groups the reference designs o
 
   Driving on unpaved terrain without road infrastructure, for racing, research, and education.
 
-  [:octicons-arrow-right-24: Off-road](families/off-road.md)
+  [:octicons-arrow-right-24: Family overview](families/off-road.md)<br>
+  [:octicons-link-external-24: Detailed guideline](https://autowarefoundation.github.io/autoware.orv-reference-design-docs/main/)
 
 </div>
 
 ## Catalog
 
-Each field of a catalog entry is independent: the family, the ODD, the platform, the sensors, the software, and the evaluation.
+Each field of a catalog entry is independent: the family, the ODD, the platform, the sensors, and the software.
 
-| Family             | Target ODD                                               | Platform          | Sensors                                            | Software                                                                  | Evaluation |
-| ------------------ | -------------------------------------------------------- | ----------------- | -------------------------------------------------- | ------------------------------------------------------------------------- | ---------- |
-| Low-speed shuttle  | Paved campus, daylight, dry, 15 km/h or less             | Shuttle           | LiDAR, cameras, GNSS/IMU                           | [Rule-based Planning](software-stacks.md#rule-based-planning)             | Proposed   |
-| Low-speed shuttle  | Paved campus, daylight, dry, 15 km/h or less             | Shuttle           | LiDAR, cameras, GNSS/IMU                           | [Diffusion Planning](software-stacks.md#diffusion-planning)               | Proposed   |
-| Low-speed shuttle  | Campus target. The model requirements are not confirmed. | Shuttle           | Not confirmed                                      | [Meteor-based](software-stacks.md#meteor-based)                           | Proposed   |
-| Highway assistance | Highway target. The ODD is not specified.                | Passenger vehicle | Camera-based. The inputs are not specified.        | [Vision Pilot](software-stacks.md#vision-pilot)                           | Proposed   |
-| Urban robotaxi     | Urban target. The ODD is not specified.                  | Passenger vehicle | Cameras and LiDARs. The details are not specified. | [Fusion Pilot](software-stacks.md#fusion-pilot)                           | Proposed   |
-| Indoor logistics   | Indoor, GPS-denied, 5 to 10 km/h                         | Small vehicle     | Wide field-of-view LiDAR, cameras                  | [Rule-based Planning](software-stacks.md#rule-based-planning), to confirm | Proposed   |
-| Off-road           | Unpaved tracks. The ODD is not specified.                | Small racer       | Cameras                                            | Not specified                                                             | Proposed   |
+| Family            | Target ODD                                               | Platform          | Sensors                                            | Software                                                                  |
+| ----------------- | -------------------------------------------------------- | ----------------- | -------------------------------------------------- | ------------------------------------------------------------------------- |
+| Highway ADAS      | Highway target. The ODD is not specified.                | Passenger vehicle | Camera-based. The inputs are not specified.        | [Vision Pilot](software-stacks.md#vision-pilot)                           |
+| Urban robotaxi    | Urban target. The ODD is not specified.                  | Passenger vehicle | Cameras and LiDARs. The details are not specified. | [Fusion Pilot](software-stacks.md#fusion-pilot)                           |
+| Low-speed shuttle | Paved campus, daylight, dry, 15 km/h or less             | Shuttle           | LiDAR, cameras, GNSS/IMU                           | [Rule-based Planning](software-stacks.md#rule-based-planning)             |
+| Low-speed shuttle | Paved campus, daylight, dry, 15 km/h or less             | Shuttle           | LiDAR, cameras, GNSS/IMU                           | [Diffusion Planning](software-stacks.md#diffusion-planning)               |
+| Low-speed shuttle | Campus target. The model requirements are not confirmed. | Shuttle           | Not confirmed                                      | [Meteor-based](software-stacks.md#meteor-based)                           |
+| Truck             | Not specified                                            | Heavy-duty truck  | Not specified                                      | Not specified                                                             |
+| Indoor logistics  | Indoor, GPS-denied, 5 to 10 km/h                         | Small vehicle     | Wide field-of-view LiDAR, cameras                  | [Rule-based Planning](software-stacks.md#rule-based-planning), to confirm |
+| Off-road          | Unpaved tracks. The ODD is not specified.                | Small racer       | Cameras                                            | Not specified                                                             |
 
-The operating targets, the compatibility, and the evaluation are not established yet.
+The operating targets and the compatibility are not established yet. For the status of each family, see its page.
 
 ## Reference software stacks
 

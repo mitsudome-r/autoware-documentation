@@ -36,7 +36,7 @@ These are conceptual configurations optimized for different deployment scenarios
 | [LSA](https://autowarefoundation.github.io/LSA-reference-design-docs/main/)               | Mixed traffic flows and low budget | Paved, GPS available   | RTK GNSS     | Balanced cost/capability             |
 | [PoV](https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/)      | Highway                            | Paved, GPS available   | RTK GNSS     | End-to-End Machine Learning Pipeline |
 | [Off-road](https://autowarefoundation.github.io/autoware.orv-reference-design-docs/main/) | Racing, education, and research    | Unpaved, GPS available | Single GNSS  | No map and AI-enabled                |
-| Truck (planned)                                                                           | Heavy duty vehicles                | Outdoor                | RTK GNSS     |                                      |
+| [Truck](../families/truck.md) (planned)                                                   | Heavy duty vehicles                | Outdoor                | RTK GNSS     |                                      |
 | [RoboRacer](RoboRacer/index.md)                                                           | Racing and education               | Indoor tracks          | No           | Racing robots using Autoware         |
 | [Go-Kart](GoKart/index.md)                                                                | Racing and development             | Outdoor                | RTK GNSS     | EV Go-Kart using Autoware            |
 | [Delivery vehicle](Delivery/index.md)                                                     | Cargo delivery on private campus   | Private campus         | GNSS/IMU     | Symmetric vehicle with crab steering |
