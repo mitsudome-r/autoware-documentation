@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" role="img" aria-labelledby="reference-design-concept-title">
+  <title id="reference-design-concept-title">A deployment profile and a reference software stack make a reference design, and a family groups related reference designs.</title>
+  <style data-aw-standalone="">svg { --aw-c-cyan: #0098c7; --aw-c-indigo: var(--aw-indigo); --aw-cyan: #00c8ff; --aw-d-accent: var(--aw-c-cyan); --aw-d-bg: color-mix(in srgb, var(--aw-c-indigo) 2%, var(--md-default-bg-color)); --aw-d-fg: var(--md-default-fg-color); --aw-d-line: #8d90a3; --aw-d-muted: var(--md-default-fg-color--light); --aw-d-node: var(--md-default-bg-color); --aw-d-node-stroke: color-mix(in srgb, var(--aw-c-indigo) 45%, transparent); --aw-flow-tone: 22%; --aw-glass-a: #ffffffd9; --aw-glass-b: #f0f6ff8c; --aw-halo-opacity: 0.22; --aw-heading-font-family: Outfit, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; --aw-indigo: #3f2ee3; --md-default-bg-color: #fff; --md-default-fg-color: #000000de; --md-default-fg-color--light: #0000008c; font-family: var(--aw-heading-font-family); background-color: var(--aw-d-bg, #fff); } .aw-d-arrow {
+  fill: var(--aw-d-line);
+} .aw-d-arrow--accent {
+  fill: var(--aw-d-accent);
+} .box {
+  fill: var(--aw-d-node);
+  stroke: var(--aw-d-node-stroke);
+  stroke-width: 1.5;
+} .box.primary {
+  fill: url("#aw-grad-primary");
+  stroke: none;
+} .box.ai {
+  fill: color-mix(in srgb, var(--aw-cyan) 14%, var(--aw-d-bg));
+  stroke: color-mix(in srgb, var(--aw-cyan) 70%, transparent);
+} .box.ext {
+  fill: none;
+  stroke: var(--aw-d-line);
+  stroke-dasharray: 6 5;
+} text {
+  font-size: 14px;
+  fill: var(--aw-d-fg);
+} .lbl {
+  font-weight: 600;
+} .sub {
+  font-size: 12px;
+  fill: var(--aw-d-muted);
+} .ttl {
+  font-size: 12px;
+  font-weight: 700;
+  fill: var(--aw-d-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+} .on-primary {
+  fill: #fff;
+} .on-primary.sub {
+  fill: #ffffffc7;
+} .edge {
+  fill: none;
+  stroke: var(--aw-d-line);
+  stroke-width: 1.6;
+  marker-end: url("#aw-arrow");
+} .edge.accent {
+  stroke: var(--aw-d-accent);
+  stroke-width: 2;
+  marker-end: url("#aw-arrow-accent");
+} .aw-glass-a {
+  stop-color: var(--aw-glass-a);
+} .aw-glass-b {
+  stop-color: var(--aw-glass-b);
+} .aw-dot {
+  fill: var(--aw-d-fg);
+  opacity: 0.12;
+} .dots {
+  fill: url("#aw-dots");
+} .halo {
+  fill: url("#aw-grad-halo");
+  opacity: var(--aw-halo-opacity);
+} .halo.cyan {
+  fill: url("#aw-grad-halo-cyan");
+} .glass-panel {
+  fill: url("#aw-grad-glass");
+  stroke: color-mix(in srgb, var(--aw-c-cyan) 45%, transparent);
+  stroke-width: 1.5;
+} .card {
+  fill: var(--aw-d-node);
+  stroke: var(--aw-d-node-stroke);
+  stroke-width: 1.2;
+  filter: url("#aw-shadow");
+} .card.ai {
+  fill: color-mix(in srgb, var(--aw-cyan) 8%, var(--aw-d-node));
+  stroke: color-mix(in srgb, var(--aw-c-cyan) 65%, transparent);
+} .flow {
+  fill: none;
+  stroke: color-mix(in srgb, var(--aw-d-line) var(--aw-flow-tone), #fff);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 6 44;
+  animation: aw-flow 2.4s linear infinite;
+} .flow.flow-accent {
+  stroke: color-mix(in srgb, var(--aw-d-accent) var(--aw-flow-tone), #fff);
+} .edge.head, .edge.accent.head, .traj.head, .route.head {
+  stroke: none;
+} @keyframes aw-flow {
+  from {
+    stroke-dashoffset: 6;
+  }
+
+  to {
+    stroke-dashoffset: -94;
+  }
+} @media (prefers-reduced-motion: reduce) {.flow {
+    display: none;
+    animation: none;
+  }}</style>
+  <defs data-aw-standalone=""><marker
+      id="aw-arrow"
+      viewBox="0 0 10 10"
+      refX="8.5"
+      refY="5"
+      markerWidth="7"
+      markerHeight="7"
+      orient="auto-start-reverse"
+    >
+      <path class="aw-d-arrow" d="M0,0.5 L10,5 L0,9.5 z" />
+    </marker><marker
+      id="aw-arrow-accent"
+      viewBox="0 0 10 10"
+      refX="8.5"
+      refY="5"
+      markerWidth="7"
+      markerHeight="7"
+      orient="auto-start-reverse"
+    >
+      <path class="aw-d-arrow aw-d-arrow--accent" d="M0,0.5 L10,5 L0,9.5 z" />
+    </marker><pattern id="aw-dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle class="aw-dot" cx="2" cy="2" r="1.1" />
+    </pattern><linearGradient id="aw-grad-glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" class="aw-glass-a" />
+      <stop offset="1" class="aw-glass-b" />
+    </linearGradient><radialGradient id="aw-grad-halo">
+      <stop offset="0" stop-color="#3f2ee3" stop-opacity="1" />
+      <stop offset="1" stop-color="#3f2ee3" stop-opacity="0" />
+    </radialGradient><radialGradient id="aw-grad-halo-cyan">
+      <stop offset="0" stop-color="#00c8ff" stop-opacity="1" />
+      <stop offset="1" stop-color="#00c8ff" stop-opacity="0" />
+    </radialGradient><linearGradient id="aw-grad-primary" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3f2ee3" />
+      <stop offset="1" stop-color="#2a6df2" />
+    </linearGradient><filter
+      id="aw-shadow"
+      filterUnits="userSpaceOnUse"
+      x="-2000"
+      y="-2000"
+      width="6000"
+      height="6000"
+    >
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00002a" flood-opacity="0.12" />
+    </filter></defs>
+
+  <!-- Background: a faint dot grid and soft glows -->
+  <rect class="dots" x="0" y="0" width="900" height="380"/>
+  <circle class="halo" cx="420" cy="140" r="130"/>
+  <circle class="halo cyan" cx="420" cy="310" r="66"/>
+  <circle class="halo" cx="750" cy="220" r="130"/>
+
+  <!-- Parts of the deployment profile -->
+  <rect class="card" x="24" y="40" width="220" height="56" rx="12"/>
+  <text class="lbl" x="44" y="60" dominant-baseline="central">Vehicle platform</text>
+  <text class="sub" x="44" y="80" dominant-baseline="central">Vehicle, sensors, compute</text>
+
+  <rect class="card" x="24" y="112" width="220" height="56" rx="12"/>
+  <text class="lbl" x="44" y="132" dominant-baseline="central">Operating conditions</text>
+  <text class="sub" x="44" y="152" dominant-baseline="central">Roads, speed, weather, light</text>
+
+  <rect class="card" x="24" y="184" width="220" height="56" rx="12"/>
+  <text class="lbl" x="44" y="204" dominant-baseline="central">Use case</text>
+  <text class="sub" x="44" y="224" dominant-baseline="central">Functions, responsibilities</text>
+
+  <!-- Parts of the software stack -->
+  <rect class="card ai" x="24" y="280" width="220" height="56" rx="12"/>
+  <text class="lbl" x="44" y="300" dominant-baseline="central">Autoware Core + Universe</text>
+  <text class="sub" x="44" y="320" dominant-baseline="central">Modules, models, parameters</text>
+
+  <!-- Lines into the deployment profile and the stack -->
+  <path class="edge" d="M244 68 C284 68 284 132 316 132"/>
+  <path class="edge" d="M244 140 H316"/>
+  <path class="edge" d="M244 212 C284 212 284 148 316 148"/>
+  <path class="edge" d="M244 308 H316"/>
+
+  <!-- Deployment profile -->
+  <rect class="card" x="320" y="104" width="200" height="72" rx="12"/>
+  <text class="lbl" x="420" y="130" text-anchor="middle" dominant-baseline="central">Deployment profile</text>
+  <text class="sub" x="420" y="152" text-anchor="middle" dominant-baseline="central">Sets the target</text>
+
+  <!-- Reference software stack -->
+  <rect class="card ai" x="320" y="272" width="200" height="72" rx="12"/>
+  <text class="lbl" x="420" y="298" text-anchor="middle" dominant-baseline="central">Reference software stack</text>
+  <text class="sub" x="420" y="320" text-anchor="middle" dominant-baseline="central">Supplies the software</text>
+
+  <!-- Family -->
+  <rect class="glass-panel" x="608" y="100" width="276" height="240" rx="22"/>
+  <text class="ttl" x="628" y="128">Family</text>
+
+  <!-- Lines into the reference design -->
+  <path class="edge accent" d="M520 140 C576 140 576 184 632 184"/>
+  <path class="flow flow-accent" pathLength="100" d="M520 140 C576 140 576 184 632 184"/>
+  <path class="edge accent head" d="M520 140 C576 140 576 184 632 184"/>
+  <path class="edge accent" d="M520 308 C576 308 576 208 632 208"/>
+  <path class="flow flow-accent" pathLength="100" d="M520 308 C576 308 576 208 632 208"/>
+  <path class="edge accent head" d="M520 308 C576 308 576 208 632 208"/>
+
+  <!-- Reference design -->
+  <rect class="box primary" x="636" y="156" width="228" height="80" rx="16"/>
+  <text class="lbl on-primary" x="750" y="184" text-anchor="middle" dominant-baseline="central">Reference design</text>
+  <text class="sub on-primary" x="750" y="208" text-anchor="middle" dominant-baseline="central">Baseline and variants</text>
+
+  <!-- Other reference designs of the family -->
+  <rect class="box ext" x="636" y="256" width="228" height="56" rx="12"/>
+  <text class="lbl" x="750" y="276" text-anchor="middle" dominant-baseline="central">Other reference designs</text>
+  <text class="sub" x="750" y="296" text-anchor="middle" dominant-baseline="central">Same application</text>
+</svg>

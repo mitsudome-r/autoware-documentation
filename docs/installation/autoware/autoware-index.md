@@ -57,7 +57,7 @@ There are two ways to generate the file:
 
    When combined, the `--packages`, `--repository`, `--tags`, and `--reference-design` filters are ANDed.
    The file also includes the repositories of the registered packages that your selection depends on (`index_dependencies` in the registry), even when they do not match the filters.
-   A [Reference Design](../../reference-design/index.md) entry is a complete system that others can reproduce, for example [Vision Pilot](https://github.com/autowarefoundation/vision_pilot).
+   A [reference design](../../reference-design/index.md) combines a deployment profile with a reference software stack. The filter selects the entries of the [reference software stacks](../../reference-design/software-stacks.md), for example [Vision Pilot](https://github.com/autowarefoundation/vision_pilot).
    Use the `--rosdistro` value that matches your ROS 2 distribution.
    The available distributions are listed in the [autoware-index](https://github.com/autowarefoundation/autoware-index/tree/main/distributions) repository.
    At the Autoware 2.0.0 release, the registry has only the `jazzy` distribution.

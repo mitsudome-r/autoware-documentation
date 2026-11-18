@@ -1,5 +1,9 @@
 nav:
   - index.md
+  - concepts.md
+  - Families: families
+  - software-stacks.md
+  - template.md
   - Get started: get-started
   - Reference HW: reference-hw
   - metrics.md

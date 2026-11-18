@@ -2,6 +2,8 @@
 
 Use the decision tree to identify which reference configuration matches your deployment scenario. Then explore the real-world examples that demonstrate each configuration.
 
+The [reference design catalog](../index.md#catalog) lists the reference designs by family. This page also covers the example builds and the production platforms.
+
 ## Decision tree
 
 {{ diagram("images/reference-design-decision-tree.svg", "The decision tree leads from the technology maturity, the environment, the location, and the vehicle size to a reference design.") }}
