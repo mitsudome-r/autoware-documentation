@@ -2,6 +2,8 @@
 
 Use the decision tree to identify which reference configuration matches your deployment scenario. Then explore the real-world examples that demonstrate each configuration.
 
+The [reference design catalog](../index.md#catalog) lists the reference designs by family. This page also covers the example builds and the production platforms.
+
 ## Decision tree
 
 {{ diagram("images/reference-design-decision-tree.svg", "The decision tree leads from the technology maturity, the environment, the location, and the vehicle size to a reference design.") }}
@@ -34,7 +36,7 @@ These are conceptual configurations optimized for different deployment scenarios
 | [LSA](https://autowarefoundation.github.io/LSA-reference-design-docs/main/)               | Mixed traffic flows and low budget | Paved, GPS available   | RTK GNSS     | Balanced cost/capability             |
 | [PoV](https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/)      | Highway                            | Paved, GPS available   | RTK GNSS     | End-to-End Machine Learning Pipeline |
 | [Off-road](https://autowarefoundation.github.io/autoware.orv-reference-design-docs/main/) | Racing, education, and research    | Unpaved, GPS available | Single GNSS  | No map and AI-enabled                |
-| Truck (planned)                                                                           | Heavy duty vehicles                | Outdoor                | RTK GNSS     |                                      |
+| [Truck](../families/truck.md) (planned)                                                   | Heavy duty vehicles                | Outdoor                | RTK GNSS     |                                      |
 | [RoboRacer](RoboRacer/index.md)                                                           | Racing and education               | Indoor tracks          | No           | Racing robots using Autoware         |
 | [Go-Kart](GoKart/index.md)                                                                | Racing and development             | Outdoor                | RTK GNSS     | EV Go-Kart using Autoware            |
 | [Delivery vehicle](Delivery/index.md)                                                     | Cargo delivery on private campus   | Private campus         | GNSS/IMU     | Symmetric vehicle with crab steering |
